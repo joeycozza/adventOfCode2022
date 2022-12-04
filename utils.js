@@ -21,5 +21,5 @@ function parseFileLinesToArray(file, filterer = Boolean, mapper = Number) {
 }
 
 function readFile(file, splitter = '\n') {
-  return fs.readFileSync(path.join(__dirname, 'input', file), 'utf8').split(splitter)
+  return fs.readFileSync(path.join(__dirname, 'input', file) + '.txt', 'utf8').split(splitter)
 }

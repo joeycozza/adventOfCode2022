@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const { readFile } = require('./utils')
 
-const groupedLines = readFile('day1.txt', '\n\n')
+const groupedLines = readFile('day1', '\n\n')
 const caloriesPerElf = groupedLines.map((groupedLine) => _.sum(groupedLine.split('\n').map(Number)))
 
 const mostCalories = _.max(caloriesPerElf)
